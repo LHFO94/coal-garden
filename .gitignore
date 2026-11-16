@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.wrangler/
+.env*
+.dev.vars*
+*.log
+.DS_Store
+
+# Local, build, test, and deployment configuration stays private.
+*config*
+/wrangler*
+/.nvmrc
+/.npmrc
+/.yarnrc*
+/.netrc
+
+# Operational records can contain private deployment and account details.
+/results/
+/.runtime*/
+/.*smoke*
+/.*experiment*
+*.har
+*.mp4
+*.pem
+*.key
+*.p12
+*.pfx
+*.tfstate*

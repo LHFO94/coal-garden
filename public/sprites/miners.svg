@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="72" viewBox="0 0 256 72" shape-rendering="crispEdges">
+  <title>Coal Garden — original miner animation atlas</title>
+  <desc>Sixteen-by-twenty-four pixel frames. Direction blocks south, east, north, west; four frames each. Rows idle, walk, pickaxe. Exact #d05baa pixels are the overall color mask, recolored once into four crew atlases by the renderer.</desc>
+  <defs>
+    <g id="body">
+      <path fill="#141b18" d="M5 3h6v2h2v6h-1v3h1v6H3v-6h1v-3H3V5h2z"/>
+      <path fill="#d05baa" d="M5 12h6v7H5zM3 13h2v4H3zm8 0h2v4h-2z"/>
+      <path fill="#24352f" d="M5 12h1v7H5zm5 0h1v7h-1zM6 17h4v2H6z"/>
+      <path fill="#b79868" d="M3 17h2v2H3zm8 0h2v2h-2z"/>
+      <path fill="#eeb94b" d="M5 3h6v2h2v3H3V5h2z"/>
+      <path fill="#c18b36" d="M3 7h10v2H3zM10 4h1v3h-1z"/>
+    </g>
+    <g id="south"><use href="#body"/><path fill="#c9aa79" d="M5 9h6v3H5z"/><path fill="#28302a" d="M5 9h1v1H5zm5 0h1v1h-1z"/><path fill="#f5e4a5" d="M7 5h3v3H7z"/><path fill="#fff4c3" d="M8 5h1v2H8z"/></g>
+    <g id="east"><use href="#body"/><path fill="#c9aa79" d="M8 9h4v3H8zm4 0h1v2h-1z"/><path fill="#28302a" d="M11 9h1v1h-1z"/><path fill="#f5e4a5" d="M11 5h3v3h-3z"/><path fill="#99713b" d="M4 9h3v3H4z"/></g>
+    <g id="north"><use href="#body"/><path fill="#a27b49" d="M5 9h6v3H5z"/><path fill="#9d742f" d="M5 5h6v2H5z"/><path fill="#e5ae44" d="M6 3h4v1H6z"/><path fill="#24352f" d="M6 12h4v4H6z"/><path fill="#92a18a" d="M7 12h2v1H7z"/></g>
+    <g id="west"><use href="#body"/><path fill="#c9aa79" d="M4 9h4v3H4zm-1 0h1v2H3z"/><path fill="#28302a" d="M4 9h1v1H4z"/><path fill="#f5e4a5" d="M2 5h3v3H2z"/><path fill="#99713b" d="M9 9h3v3H9z"/></g>
+    <g id="feet0" fill="#18211d"><path d="M4 19h3v3H3v-1h1zm5 0h3v2h1v1H9z"/><path fill="#65715a" d="M3 22h4v1H3zm6 0h4v1H9z"/></g>
+    <g id="feet1" fill="#18211d"><path d="M4 18h3v5H3v-2h1zm5 1h3v1h1v2H9z"/><path fill="#65715a" d="M3 23h4v1H3zm6-2h4v1H9z"/></g>
+    <g id="feet2" fill="#18211d"><path d="M4 19h3v2H3v-1h1zm5-1h3v3h1v2H9z"/><path fill="#65715a" d="M3 21h4v1H3zm6 2h4v1H9z"/></g>
+    <g id="hold"><path fill="#9b7846" d="M12 13h1v8h-1z"/><path fill="#b7c0a2" d="M10 12h5v1h-5zm-1 1h2v1H9z"/></g>
+    <g id="hold-left" transform="translate(16) scale(-1 1)"><use href="#hold"/></g>
+    <g id="pick0"><path fill="#9b7846" d="M11 10h1v8h-1z"/><path fill="#d1d2b3" d="M8 9h7v1H8zm-1 1h2v1H7zm7 0h1v2h-1z"/><path fill="#d1af7a" d="M10 14h3v2h-3z"/></g>
+    <g id="pick1"><path fill="#9b7846" d="M10 12h2v-2h1V8h1V5h1v7h-1v2h-2v3h-2z"/><path fill="#d1d2b3" d="M10 4h5v1h-5zm-1 1h2v1H9zm5-3h1v2h-1z"/><path fill="#d1af7a" d="M10 13h3v2h-3z"/></g>
+    <g id="pick2"><path fill="#9b7846" d="M10 15h2v1h2v1h1v2h-2v-1h-2v-1h-1z"/><path fill="#d1d2b3" d="M14 14h1v7h-1zm-1 6h1v2h-1z"/><path fill="#d1af7a" d="M10 14h3v2h-3z"/></g>
+    <g id="pick3"><path fill="#9b7846" d="M11 14h1v6h-1z"/><path fill="#d1d2b3" d="M9 19h6v1H9zm-1 1h2v1H8z"/><path fill="#d1af7a" d="M10 14h3v2h-3z"/></g>
+    <g id="idle-s"><use href="#south"/><use href="#feet0"/><use href="#hold"/></g>
+    <g id="idle-e"><use href="#east"/><use href="#feet0"/><use href="#hold"/></g>
+    <g id="idle-n"><use href="#north"/><use href="#feet0"/><use href="#hold-left"/></g>
+    <g id="idle-w"><use href="#west"/><use href="#feet0"/><use href="#hold-left"/></g>
+    <g id="glint"><path fill="#fff4c3" d="M8 5h2v1H8z"/></g>
+  </defs>
+  <!-- Idle: two-second, four-frame lamp and hand cycle; no SVG animation. -->
+  <use href="#idle-s"/><g transform="translate(16)"><use href="#idle-s"/><use href="#glint"/></g><use href="#idle-s" x="32"/><g transform="translate(48)"><use href="#idle-s"/><path fill="#d1af7a" d="M11 16h2v2h-2z"/></g>
+  <use href="#idle-e" x="64"/><g transform="translate(80)"><use href="#idle-e"/><path fill="#fff4c3" d="M12 5h2v1h-2z"/></g><use href="#idle-e" x="96"/><use href="#idle-e" x="112"/>
+  <use href="#idle-n" x="128"/><g transform="translate(144)"><use href="#idle-n"/><path fill="#eeb94b" d="M7 4h2v1H7z"/></g><use href="#idle-n" x="160"/><use href="#idle-n" x="176"/>
+  <use href="#idle-w" x="192"/><g transform="translate(208)"><use href="#idle-w"/><path fill="#fff4c3" d="M2 5h2v1H2z"/></g><use href="#idle-w" x="224"/><use href="#idle-w" x="240"/>
+  <!-- Walk: alternating footfalls and one-pixel upper-body lift. -->
+  <g transform="translate(0 24)"><use href="#south"/><use href="#feet1"/><use href="#hold"/></g><g transform="translate(16 24)"><use href="#south" y="-1"/><use href="#feet0"/><use href="#hold" y="-1"/></g><g transform="translate(32 24)"><use href="#south"/><use href="#feet2"/><use href="#hold"/></g><g transform="translate(48 24)"><use href="#south" y="-1"/><use href="#feet0"/><use href="#hold" y="-1"/></g>
+  <g transform="translate(64 24)"><use href="#east"/><use href="#feet1"/><use href="#hold"/></g><g transform="translate(80 24)"><use href="#east" y="-1"/><use href="#feet0"/><use href="#hold" y="-1"/></g><g transform="translate(96 24)"><use href="#east"/><use href="#feet2"/><use href="#hold"/></g><g transform="translate(112 24)"><use href="#east" y="-1"/><use href="#feet0"/><use href="#hold" y="-1"/></g>
+  <g transform="translate(128 24)"><use href="#north"/><use href="#feet1"/><use href="#hold-left"/></g><g transform="translate(144 24)"><use href="#north" y="-1"/><use href="#feet0"/><use href="#hold-left" y="-1"/></g><g transform="translate(160 24)"><use href="#north"/><use href="#feet2"/><use href="#hold-left"/></g><g transform="translate(176 24)"><use href="#north" y="-1"/><use href="#feet0"/><use href="#hold-left" y="-1"/></g>
+  <g transform="translate(192 24)"><use href="#west"/><use href="#feet1"/><use href="#hold-left"/></g><g transform="translate(208 24)"><use href="#west" y="-1"/><use href="#feet0"/><use href="#hold-left" y="-1"/></g><g transform="translate(224 24)"><use href="#west"/><use href="#feet2"/><use href="#hold-left"/></g><g transform="translate(240 24)"><use href="#west" y="-1"/><use href="#feet0"/><use href="#hold-left" y="-1"/></g>
+  <!-- Extraction: raised pick, backswing, strike, recovery. -->
+  <g transform="translate(0 48)"><use href="#south"/><use href="#feet0"/><use href="#pick0"/></g><g transform="translate(16 48)"><use href="#south"/><use href="#feet0"/><use href="#pick1"/></g><g transform="translate(32 48)"><use href="#south" y="1"/><use href="#feet0"/><use href="#pick2"/></g><g transform="translate(48 48)"><use href="#south"/><use href="#feet0"/><use href="#pick3"/></g>
+  <g transform="translate(64 48)"><use href="#east"/><use href="#feet0"/><use href="#pick0"/></g><g transform="translate(80 48)"><use href="#east"/><use href="#feet0"/><use href="#pick1"/></g><g transform="translate(96 48)"><use href="#east" y="1"/><use href="#feet0"/><use href="#pick2"/></g><g transform="translate(112 48)"><use href="#east"/><use href="#feet0"/><use href="#pick3"/></g>
+  <g transform="translate(128 48)"><use href="#north"/><use href="#feet0"/><g transform="translate(16) scale(-1 1)"><use href="#pick0"/></g></g><g transform="translate(144 48)"><use href="#north"/><use href="#feet0"/><g transform="translate(16) scale(-1 1)"><use href="#pick1"/></g></g><g transform="translate(160 48)"><use href="#north" y="1"/><use href="#feet0"/><g transform="translate(16) scale(-1 1)"><use href="#pick2"/></g></g><g transform="translate(176 48)"><use href="#north"/><use href="#feet0"/><g transform="translate(16) scale(-1 1)"><use href="#pick3"/></g></g>
+  <g transform="translate(192 48)"><use href="#west"/><use href="#feet0"/><g transform="translate(16) scale(-1 1)"><use href="#pick0"/></g></g><g transform="translate(208 48)"><use href="#west"/><use href="#feet0"/><g transform="translate(16) scale(-1 1)"><use href="#pick1"/></g></g><g transform="translate(224 48)"><use href="#west" y="1"/><use href="#feet0"/><g transform="translate(16) scale(-1 1)"><use href="#pick2"/></g></g><g transform="translate(240 48)"><use href="#west"/><use href="#feet0"/><g transform="translate(16) scale(-1 1)"><use href="#pick3"/></g></g>
+</svg>
